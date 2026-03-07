@@ -1,16 +1,124 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Website Copy WhatsApp Buttons</title>
-    <meta property="og:image" content="https://bolt.new/static/og_default.png" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://bolt.new/static/og_default.png" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gabriel Vendas</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f4f4f4;
+}
+
+header{
+    background:#1e90ff;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.produtos{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    padding:20px;
+}
+
+.produto{
+    background:white;
+    width:250px;
+    margin:15px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    text-align:center;
+    padding:15px;
+}
+
+.produto img{
+    width:100%;
+    border-radius:10px;
+}
+
+.preco{
+    font-size:20px;
+    color:green;
+    margin:10px 0;
+}
+
+button{
+    background:#1e90ff;
+    border:none;
+    color:white;
+    padding:10px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0f6ad8;
+}
+
+footer{
+    text-align:center;
+    background:#222;
+    color:white;
+    padding:15px;
+    margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Gabriel Vendas</h1>
+<p>Carregadores, baterias e lençóis com ótimos preços</p>
+</header>
+
+<section class="produtos">
+
+<div class="produto">
+<img src="https://via.placeholder.com/250" alt="Carregador">
+<h3>Carregador Turbo USB</h3>
+<p class="preco">R$ 25,00</p>
+<button>Comprar</button>
+</div>
+
+<div class="produto">
+<img src="https://via.placeholder.com/250" alt="Bateria">
+<h3>Bateria de Celular</h3>
+<p class="preco">R$ 40,00</p>
+<button>Comprar</button>
+</div>
+
+<div class="produto">
+<img src="https://via.placeholder.com/250" alt="Lençol">
+<h3>Lençol de Cama Casal</h3>
+<p class="preco">R$ 60,00</p>
+<button>Comprar</button>
+</div>
+
+<div class="produto">
+<img src="https://via.placeholder.com/250" alt="Carregador">
+<h3>Carregador Tipo C</h3>
+<p class="preco">R$ 30,00</p>
+<button>Comprar</button>
+</div>
+
+<div class="produto">
+<img src="https://via.placeholder.com/250" alt="Lençol">
+<h3>Lençol Solteiro</h3>
+<p class="preco">R$ 45,00</p>
+<button>Comprar</button>
+</div>
+
+</section>
+
+<footer>
+<p>© 2026 Gabriel Vendas - Todos os direitos reservados</p>
+</footer>
+
+</body>
 </html>
