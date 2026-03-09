@@ -1,195 +1,111 @@
-```html
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mateus SDA Silveira Santos - Vendas Online</title>
+<title>Mateus Silveira Santos - Serviços de Costura</title>
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial, Helvetica, sans-serif;
-}
-
 body{
-background:#f5f5f5;
-color:#333;
+font-family: Arial;
+margin:0;
+background:#f4f4f4;
 }
-
-/* MENU */
 
 header{
-background:#0d6efd;
+background:#222;
 color:white;
 padding:20px;
 text-align:center;
 }
 
 nav{
-background:#094db1;
+background:#444;
 padding:10px;
 text-align:center;
 }
 
 nav a{
 color:white;
+margin:10px;
 text-decoration:none;
-margin:0 15px;
 font-weight:bold;
 }
 
-nav a:hover{
-text-decoration:underline;
-}
-
-/* BANNER */
-
-.banner{
-background:url("https://images.unsplash.com/photo-1607083206968-13611e3d76db") center/cover;
-height:300px;
-display:flex;
-align-items:center;
-justify-content:center;
-color:white;
-font-size:32px;
-font-weight:bold;
-text-shadow:2px 2px 10px black;
-}
-
-/* PRODUTOS */
-
-.container{
+section{
 padding:40px;
-max-width:1200px;
-margin:auto;
-}
-
-.titulo{
 text-align:center;
-margin-bottom:30px;
-font-size:28px;
 }
 
-.produtos{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
+.servicos{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
 }
 
-.produto{
+.card{
 background:white;
 padding:20px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.1);
-text-align:center;
-transition:0.3s;
-}
-
-.produto:hover{
-transform:translateY(-5px);
-}
-
-.produto img{
-width:100%;
-height:200px;
-object-fit:cover;
+width:250px;
 border-radius:8px;
-}
-
-.produto h3{
-margin:15px 0 10px;
-}
-
-.preco{
-color:#0d6efd;
-font-size:20px;
-font-weight:bold;
-margin-bottom:10px;
-}
-
-.botao{
-display:inline-block;
-padding:10px 20px;
-background:#25d366;
-color:white;
-text-decoration:none;
-border-radius:6px;
-font-weight:bold;
-}
-
-.botao:hover{
-background:#1ebe5d;
-}
-
-/* CONTATO */
-
-.contato{
-background:white;
-margin-top:40px;
-padding:30px;
-border-radius:10px;
-text-align:center;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 
 footer{
-background:#111;
+background:#222;
 color:white;
 text-align:center;
 padding:15px;
-margin-top:40px;
 }
-
 </style>
 </head>
 
 <body>
 
 <header>
-<h1>Mateus SDA Silveira Santos</h1>
-<p>Loja Online</p>
+<h1>Mateus Silveira Santos</h1>
+<p>Serviços profissionais de costura e ajustes de roupas</p>
 </header>
 
 <nav>
 <a href="#">Início</a>
-<a href="#produtos">Produtos</a>
-<a href="#contato">Contato</a>
+<a href="#">Serviços</a>
+<a href="#">Portfólio</a>
+<a href="#">Contato</a>
 </nav>
 
-<div class="banner">
-Ofertas Imperdíveis
+<section>
+<h2>Nossos Serviços</h2>
+
+<div class="servicos">
+
+<div class="card">
+<h3>Ajustes de Roupas</h3>
+<p>Barras, apertar roupas e consertos em geral.</p>
 </div>
 
-<div class="container">
-
-<h2 class="titulo" id="produtos">Produtos em Destaque</h2>
-
-<div class="produtos">
-
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1518443895914-6f5f7c1c5b14">
-<h3>Fone Bluetooth</h3>
-<p class="preco">R$129,90</p>
-<a class="botao" href="https://wa.me/5500000000000" target="_blank">Comprar</a>
+<div class="card">
+<h3>Costura Sob Medida</h3>
+<p>Confecção personalizada de roupas.</p>
 </div>
 
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12">
-<h3>Smartwatch</h3>
-<p class="preco">R$199,90</p>
-<a class="botao" href="https://wa.me/5500000000000" target="_blank">Comprar</a>
+<div class="card">
+<h3>Reparos</h3>
+<p>Troca de zíper, botões e reformas.</p>
 </div>
 
-<div class="produto">
-<img src="https://images.unsplash.com/photo-1600086827875-a63b01f1335c">
-<h3>Controle Gamer</h3>
-<p class="preco">R$149,90</p>
-<a class="botao" href="https://wa.me/5500000000000" target="_blank">Comprar</a>
 </div>
+</section>
 
-<div class="produto">
-<img src="https://images.unsplas
-```
+<section>
+<h2>Contato</h2>
+<p>WhatsApp: (00) 00000-0000</p>
+<p>Email: contato@mateuscostura.com</p>
+</section>
+
+<footer>
+<p>© 2026 Mateus Silveira Santos - Serviços de Costura</p>
+</footer>
+
+</body>
+</html>
