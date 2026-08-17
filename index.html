@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rafaela dos Santos | Tecidos de Crochê</title>
+  <title>Rafaela Santana dos Santos | Tecidos de Crochê</title>
   <style>
     * {
       margin: 0;
@@ -13,13 +13,13 @@
     }
 
     body {
-      background-color: #fff8f2;
-      color: #5a3e36;
+      background: #fff8f2;
+      color: #4b2e2e;
       line-height: 1.6;
     }
 
     header {
-      background: linear-gradient(135deg, #d8a48f, #f4d6c8);
+      background: linear-gradient(135deg, #d98c8c, #f2c6b6);
       color: white;
       text-align: center;
       padding: 40px 20px;
@@ -35,7 +35,7 @@
     }
 
     nav {
-      background-color: #b97a6d;
+      background: #b76e79;
       padding: 15px;
       text-align: center;
     }
@@ -57,20 +57,20 @@
       margin: auto;
     }
 
-    .intro, .tipos, .contato {
+    .sobre, .produtos, .contato {
+      margin-bottom: 40px;
       background: white;
-      margin-bottom: 20px;
       padding: 25px;
-      border-radius: 12px;
+      border-radius: 15px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.08);
     }
 
     h2 {
-      color: #a35f4b;
+      color: #b76e79;
       margin-bottom: 15px;
     }
 
-    .cards {
+    .galeria {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
@@ -78,21 +78,22 @@
     }
 
     .card {
-      background: #fff3ec;
+      background: #fff3eb;
       padding: 20px;
-      border-radius: 10px;
+      border-radius: 12px;
+      text-align: center;
       box-shadow: 0 3px 8px rgba(0,0,0,0.06);
-      transition: transform 0.3s ease;
     }
 
-    .card:hover {
-      transform: translateY(-5px);
+    .card h3 {
+      margin-bottom: 10px;
+      color: #8b4f5c;
     }
 
     footer {
-      background-color: #5a3e36;
-      color: white;
       text-align: center;
+      background: #b76e79;
+      color: white;
       padding: 20px;
       margin-top: 30px;
     }
@@ -101,14 +102,60 @@
 <body>
 
   <header>
-    <h1>Rafaela dos Santos</h1>
-    <p>Arte e delicadeza em tecidos de crochê</p>
+    <h1>Rafaela Santana dos Santos</h1>
+    <p>Arte, delicadeza e beleza em tecidos de crochê</p>
   </header>
 
   <nav>
     <a href="#sobre">Sobre</a>
-    <a href="#tipos">Tipos de Crochê</a>
+    <a href="#produtos">Produtos</a>
     <a href="#contato">Contato</a>
   </nav>
 
-  <section id="sobre"
+  <section id="sobre" class="sobre">
+    <h2>Sobre</h2>
+    <p>
+      Bem-vindo ao espaço de <strong>Rafaela Santana dos Santos</strong>, dedicado à criação de
+      lindos tecidos e peças em crochê. Cada trabalho é feito com carinho, atenção aos detalhes
+      e muito amor pelo artesanato, trazendo charme e exclusividade para cada peça.
+    </p>
+  </section>
+
+  <section id="produtos" class="produtos">
+    <h2>Produtos em Crochê</h2>
+    <p>Confira alguns exemplos de peças produzidas com beleza e qualidade:</p>
+
+    <div class="galeria">
+      <div class="card">
+        <h3>Toalhas de Mesa</h3>
+        <p>Peças elegantes para decorar sua casa com delicadeza.</p>
+      </div>
+      <div class="card">
+        <h3>Tapetes</h3>
+        <p>Tapetes artesanais feitos em crochê com diversos estilos e cores.</p>
+      </div>
+      <div class="card">
+        <h3>Caminhos de Mesa</h3>
+        <p>Detalhes que valorizam sua decoração com um toque artesanal.</p>
+      </div>
+      <div class="card">
+        <h3>Peças Personalizadas</h3>
+        <p>Produção sob encomenda de acordo com o gosto de cada cliente.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <h2>Contato</h2>
+    <p>Entre em contato para encomendas e mais informações:</p>
+    <p><strong>Nome:</strong> Rafaela Santana dos Santos</p>
+    <p><strong>Email:</strong> rafaela@email.com</p>
+    <p><strong>WhatsApp:</strong> (00) 00000-0000</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Rafaela Santana dos Santos - Tecidos de Crochê</p>
+  </footer>
+
+</body>
+</html>
