@@ -1,247 +1,114 @@
-import { MessageCircle, FileText, Headphones, Mail, Clock, Shield, Heart, Award, CheckCircle } from 'lucide-react';
-
-function App() {
-  const whatsappNumber = "5511967450723";
-  const whatsappUrl = `https://wa.me/${whatsappNumber}`;
-
-  const services = [
-    {
-      icon: FileText,
-      title: "2ª Via de Boleto",
-      description: "Emita a segunda via do seu boleto de forma rápida e segura"
-    },
-    {
-      icon: Headphones,
-      title: "Suporte Técnico",
-      description: "Assistência técnica especializada para resolver seus problemas"
-    },
-    {
-      icon: Mail,
-      title: "Outros Assuntos",
-      description: "Entre em contato para dúvidas gerais e informações"
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rafaela dos Santos | Tecidos de Crochê</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
     }
-  ];
 
-  const benefits = [
-    { icon: Clock, text: "Atendimento rápido e eficiente" },
-    { icon: Shield, text: "Segurança e privacidade garantidas" },
-    { icon: Heart, text: "Suporte humanizado e personalizado" }
-  ];
+    body {
+      background-color: #fff8f2;
+      color: #5a3e36;
+      line-height: 1.6;
+    }
 
-  const steps = [
-    { number: "01", title: "Escolha o serviço", description: "Selecione o tipo de atendimento que você precisa" },
-    { number: "02", title: "Entre em contato", description: "Fale conosco através do WhatsApp" },
-    { number: "03", title: "Resolva rapidamente", description: "Nossa equipe resolverá sua solicitação com agilidade" }
-  ];
+    header {
+      background: linear-gradient(135deg, #d8a48f, #f4d6c8);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
 
-  const commitments = [
-    { icon: Award, title: "Transparência", description: "Comunicação clara e honesta em todos os processos" },
-    { icon: CheckCircle, title: "Seriedade", description: "Compromisso com a qualidade e profissionalismo" },
-    { icon: Heart, title: "Ética", description: "Respeito e integridade no relacionamento com clientes" }
-  ];
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
 
-  return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-rose-50 to-pink-100">
-      <header className="sticky top-0 z-50 backdrop-blur-md bg-white/70 border-b border-pink-100 shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-rose-600 rounded-full flex items-center justify-center">
-                <MessageCircle className="w-7 h-7 text-white" />
-              </div>
-              <div>
-                <h1 className="text-xl font-bold text-slate-900">atendimento</h1>
-                <p className="text-xs text-slate-600">Online • Disponível agora</p>
-              </div>
-            </div>
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gradient-to-r from-pink-500 to-rose-600 text-white px-6 py-2.5 rounded-full font-semibold hover:from-pink-600 hover:to-rose-700 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center gap-2"
-            >
-              <MessageCircle className="w-5 h-5" />
-              WhatsApp
-            </a>
-          </div>
-        </div>
-      </header>
+    header p {
+      font-size: 1.2rem;
+    }
 
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid lg:grid-cols-3 gap-8">
-          <div className="lg:col-span-1">
-            <div className="bg-white rounded-3xl shadow-xl overflow-hidden sticky top-24">
-              <div className="h-64 bg-gradient-to-br from-pink-400 via-rose-500 to-pink-600 relative overflow-hidden">
-                <div className="absolute inset-0 bg-black/10"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <MessageCircle className="w-32 h-32 text-white/30" />
-                </div>
-              </div>
+    nav {
+      background-color: #b97a6d;
+      padding: 15px;
+      text-align: center;
+    }
 
-              <div className="p-6">
-                <h2 className="text-2xl font-bold text-slate-900 mb-2">Central Sem Parar</h2>
-                <p className="text-slate-600 text-sm mb-6">
-                  Atendimento 24/7 para suas necessidades. Sempre disponível, sempre pronto.
-                </p>
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
 
-                <div className="grid grid-cols-3 gap-3 mb-6">
-                  {benefits.map((benefit, index) => (
-                    <div key={index} className="text-center">
-                      <div className="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center mx-auto mb-2">
-                        <benefit.icon className="w-6 h-6 text-pink-600" />
-                      </div>
-                      <p className="text-xs text-slate-600 leading-tight">{benefit.text}</p>
-                    </div>
-                  ))}
-                </div>
+    nav a:hover {
+      text-decoration: underline;
+    }
 
-                <div className="space-y-3">
-                  <a
-                    href={whatsappUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block w-full bg-gradient-to-r from-pink-500 to-rose-600 text-white text-center py-3 rounded-xl font-semibold hover:from-pink-600 hover:to-rose-700 transition-all duration-300 shadow-lg hover:shadow-xl"
-                  >
-                    Iniciar Atendimento
-                  </a>
-                  <a
-                    href={whatsappUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block w-full border-2 border-pink-500 text-pink-600 text-center py-3 rounded-xl font-semibold hover:bg-pink-50 transition-all duration-300"
-                  >
-                    Fale Conosco
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
 
-          <div className="lg:col-span-2 space-y-12">
-            <section>
-              <h2 className="text-3xl font-bold text-slate-900 mb-2">Como podemos ajudar?</h2>
-              <p className="text-slate-600 mb-8">Escolha o serviço que você precisa e fale conosco pelo WhatsApp</p>
+    .intro, .tipos, .contato {
+      background: white;
+      margin-bottom: 20px;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    }
 
-              <div className="grid md:grid-cols-3 gap-6">
-                {services.map((service, index) => (
-                  <a
-                    key={index}
-                    href={whatsappUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 group border border-pink-100"
-                  >
-                    <div className="w-14 h-14 bg-gradient-to-br from-pink-100 to-rose-100 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                      <service.icon className="w-7 h-7 text-pink-600" />
-                    </div>
-                    <h3 className="text-lg font-bold text-slate-900 mb-2">{service.title}</h3>
-                    <p className="text-sm text-slate-600">{service.description}</p>
-                  </a>
-                ))}
-              </div>
-            </section>
+    h2 {
+      color: #a35f4b;
+      margin-bottom: 15px;
+    }
 
-            <section className="bg-white rounded-3xl p-8 shadow-xl border border-pink-100">
-              <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">Como funciona</h2>
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
 
-              <div className="grid md:grid-cols-3 gap-8">
-                {steps.map((step, index) => (
-                  <div key={index} className="text-center">
-                    <div className="w-16 h-16 bg-gradient-to-br from-pink-500 to-rose-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
-                      <span className="text-2xl font-bold text-white">{step.number}</span>
-                    </div>
-                    <h3 className="text-lg font-bold text-slate-900 mb-2">{step.title}</h3>
-                    <p className="text-sm text-slate-600">{step.description}</p>
-                  </div>
-                ))}
-              </div>
+    .card {
+      background: #fff3ec;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.06);
+      transition: transform 0.3s ease;
+    }
 
-              <div className="mt-8 text-center">
-                <a
-                  href={whatsappUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-gradient-to-r from-pink-500 to-rose-600 text-white px-8 py-3 rounded-full font-semibold hover:from-pink-600 hover:to-rose-700 transition-all duration-300 shadow-lg hover:shadow-xl"
-                >
-                  Começar Agora
-                </a>
-              </div>
-            </section>
+    .card:hover {
+      transform: translateY(-5px);
+    }
 
-            <section>
-              <h2 className="text-3xl font-bold text-slate-900 mb-8 text-center">Nossos Compromissos</h2>
+    footer {
+      background-color: #5a3e36;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
 
-              <div className="grid md:grid-cols-3 gap-6">
-                {commitments.map((commitment, index) => (
-                  <div key={index} className="bg-white rounded-2xl p-6 shadow-lg border border-pink-100">
-                    <div className="w-14 h-14 bg-gradient-to-br from-pink-100 to-rose-100 rounded-xl flex items-center justify-center mb-4">
-                      <commitment.icon className="w-7 h-7 text-pink-600" />
-                    </div>
-                    <h3 className="text-lg font-bold text-slate-900 mb-2">{commitment.title}</h3>
-                    <p className="text-sm text-slate-600">{commitment.description}</p>
-                  </div>
-                ))}
-              </div>
-            </section>
-          </div>
-        </div>
-      </main>
+  <header>
+    <h1>Rafaela dos Santos</h1>
+    <p>Arte e delicadeza em tecidos de crochê</p>
+  </header>
 
-      <footer className="bg-slate-900 text-white mt-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
-            <div>
-              <div className="flex items-center gap-3 mb-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-pink-500 to-rose-600 rounded-full flex items-center justify-center">
-                  <MessageCircle className="w-6 h-6 text-white" />
-                </div>
-                <h3 className="text-xl font-bold">Atendimento</h3>
-              </div>
-              <p className="text-slate-400 text-sm">
-                Excelência em atendimento e soluções personalizadas para você.
-              </p>
-            </div>
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#tipos">Tipos de Crochê</a>
+    <a href="#contato">Contato</a>
+  </nav>
 
-            <div>
-              <h4 className="font-bold mb-4">Atendimento</h4>
-              <ul className="space-y-2 text-sm text-slate-400">
-                <li>Segunda a Sexta: 8h às 18h</li>
-                <li>Sábado: 8h às 12h</li>
-                <li>WhatsApp: 24/7</li>
-              </ul>
-            </div>
-
-            <div>
-              <h4 className="font-bold mb-4">Contato</h4>
-              <a
-                href={whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block bg-gradient-to-r from-pink-500 to-rose-600 text-white px-6 py-2 rounded-full text-sm font-semibold hover:from-pink-600 hover:to-rose-700 transition-all duration-300"
-              >
-                Fale no WhatsApp
-              </a>
-            </div>
-          </div>
-
-          <div className="border-t border-slate-800 pt-8 text-center text-sm text-slate-400">
-            <p>&copy; 2024 Atendimento. Todos os direitos reservados.</p>
-          </div>
-        </div>
-      </footer>
-
-      <a
-        href={whatsappUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform duration-300 z-50 group"
-        aria-label="WhatsApp"
-      >
-        <MessageCircle className="w-8 h-8 text-white group-hover:scale-110 transition-transform" />
-        <span className="absolute -top-1 -right-1 w-4 h-4 bg-red-500 rounded-full animate-pulse"></span>
-      </a>
-    </div>
-  );
-}
-
-export default App;
+  <section id="sobre"
