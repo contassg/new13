@@ -1,7 +1,7 @@
 import { MessageCircle, FileText, Headphones, Mail, Clock, Shield, Heart, Award, CheckCircle } from 'lucide-react';
 
 function App() {
-  const whatsappNumber = "5511965157358";
+  const whatsappNumber = "5511967450723";
   const whatsappUrl = `https://wa.me/${whatsappNumber}`;
 
   const services = [
@@ -50,7 +50,7 @@ function App() {
                 <MessageCircle className="w-7 h-7 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-bold text-slate-900">Central Sem Parar</h1>
+                <h1 className="text-xl font-bold text-slate-900">atendimento</h1>
                 <p className="text-xs text-slate-600">Online • Disponível agora</p>
               </div>
             </div>
@@ -195,7 +195,7 @@ function App() {
                 <div className="w-10 h-10 bg-gradient-to-br from-pink-500 to-rose-600 rounded-full flex items-center justify-center">
                   <MessageCircle className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold">Central Sem Parar</h3>
+                <h3 className="text-xl font-bold">Atendimento</h3>
               </div>
               <p className="text-slate-400 text-sm">
                 Excelência em atendimento e soluções personalizadas para você.
@@ -225,7 +225,7 @@ function App() {
           </div>
 
           <div className="border-t border-slate-800 pt-8 text-center text-sm text-slate-400">
-            <p>&copy; 2024 Central Sem Parar. Todos os direitos reservados.</p>
+            <p>&copy; 2024 Atendimento. Todos os direitos reservados.</p>
           </div>
         </div>
       </footer>
